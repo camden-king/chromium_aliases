@@ -6,7 +6,7 @@ alias gm_linux='goma_ctl ensure_start'
 
 # Git commands 
 alias g_au='git cl format && git add . && git commit --amend && git cl upload'
-alias g_mm='git fetch origin && git merge origin/master && gclient sync' # merge main into current branch
+alias g_mm='git fetch origin && git merge origin/main && gclient sync' # merge main into current branch
 
 # Build commands
 alias build_default='autoninja -C out/Default'
