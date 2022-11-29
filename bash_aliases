@@ -24,5 +24,14 @@ function ut_r() {
 }
 alias ut_r_all='testing/run_with_dummy_home.py testing/xvfb.py out/Default/unit_tests'
 
+function run() {
+ number=$1
+ shift
+ for i in seq $number; do
+  $@
+  echo "Running test : $i" 1>&2
+ done
+}
+
 export -f bt_r
 export -f ut_r
