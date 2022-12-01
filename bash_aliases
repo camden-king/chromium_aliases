@@ -1,6 +1,6 @@
 # My Bash Aliases for deleveloping on Chromium 
 
-alias alias_version='1.0'
+alias alias_version='echo "Now using chromium_aliases version 1.0"'
 
 # Start of day commands
 alias gm_mac='gcert && gm'
@@ -9,6 +9,7 @@ alias gm='update_chromium_aliases && goma_ctl ensure_start && (cd ~/chromium/src
 function update_chromium_aliases() {
     (cd ~/chromium_aliases; git pull && cp bash_aliases ~/.bash_aliases)
     source ~/.bash_aliases
+    alias_version
 }
 
 # Git commands 
