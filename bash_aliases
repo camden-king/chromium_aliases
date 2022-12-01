@@ -1,8 +1,15 @@
 # My Bash Aliases for deleveloping on Chromium 
 
+alias alias_version='2.0'
+
 # Start of day commands
-alias gm_mac='gcert && goma_ctl ensure_start && (cd /Users/camdenking/chromium/src; all_b)'
-alias gm_linux='goma_ctl ensure_start'
+alias gm_mac='gcert && gm'
+alias gm='goma_ctl ensure_start && (cd ~/chromium/src; all_b) && update_chromium_aliases'
+
+function update_chromium_aliases() {
+    (cd ~/chromium_aliases; git pull && cp bash_aliases ~/.bash_aliases)
+    source ~/.bash_aliases
+}
 
 # Git commands 
 alias g_au='git cl format && git add . && git commit --amend && git cl upload'
@@ -24,6 +31,7 @@ function ut_r() {
 }
 alias ut_r_all='testing/run_with_dummy_home.py testing/xvfb.py out/Default/unit_tests'
 
+# used to run a text multiple times
 function run() {
  number=$1
  shift
