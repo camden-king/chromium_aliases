@@ -1,7 +1,7 @@
 # My Bash Aliases for deleveloping on Chromium 
 
 # Start of day commands
-alias gm_mac='gcert && goma_ctl ensure_start'
+alias gm_mac='gcert && goma_ctl ensure_start && (cd /Users/camdenking/chromium/src; all_b)'
 alias gm_linux='goma_ctl ensure_start'
 
 # Git commands 
