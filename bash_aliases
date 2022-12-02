@@ -32,6 +32,10 @@ function ut_r() {
 }
 alias ut_r_all='testing/run_with_dummy_home.py testing/xvfb.py out/Default/unit_tests'
 
+function ut_b_r() {
+ ut_b && ut_r
+}
+
 # used to run a text multiple times
 function run() {
  number=$1
