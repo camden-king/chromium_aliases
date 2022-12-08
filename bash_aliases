@@ -17,7 +17,7 @@ alias g_au='git cl format && git add . && git commit --amend && git cl upload'
 function g_mu() {
     git cl format
     git add .
-    git commit -m *$1*
+    git commit -m *"$1"*
     git cl upload
 }
 alias g_mm='git fetch origin && git merge origin/main && gclient sync' # merge main into current branch
