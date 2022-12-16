@@ -26,6 +26,7 @@ alias g_mm='git fetch origin && git merge origin/main && gclient sync' # merge m
 alias build_default='autoninja -C out/Default'
 
 alias all_b='build_default chrome browser_tests unit_tests'
+alias b_all='all_b'
 alias cr_b='build_default chrome'
 alias bt_b='build_default browser_tests'
 alias ut_b='build_default unit_tests'
