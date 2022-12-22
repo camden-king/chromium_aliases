@@ -7,8 +7,8 @@ alias gm_mac='gcert && gm'
 alias gm='update_chromium_aliases && goma_ctl ensure_start && gclient sync -D && (cd ~/chromium/src; all_b)'
 
 function update_chromium_aliases() {
-    (cd ~/chromium_aliases; git pull && cp bash_aliases ~/.bash_aliases)
-    source ~/.bash_aliases
+    (cd ~/chromium_aliases; git pull && cp bash_profile ~/.bash_profile)
+    source ~/.bash_profile
     alias_version
 }
 
