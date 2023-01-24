@@ -32,6 +32,8 @@ alias cr_b='build_default chrome'
 alias bt_b='build_default browser_tests'
 alias ut_b='build_default unit_tests'
 
+alias cr_r='./out/Default/chrome --enable-logging --user-data-dir=$HOME/Documents/test_data'
+
 function bt_r() {
  testing/run_with_dummy_home.py testing/xvfb.py out/Default/browser_tests --gtest_filter=*$1* 
 }
