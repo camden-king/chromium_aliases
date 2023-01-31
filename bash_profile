@@ -24,7 +24,7 @@ function g_mu() {
 alias g_mm='git fetch origin && git merge origin/main && gclient sync' # merge main into current branch
 
 # Build commands
-alias build_default='autoninja -C out/Default'
+alias build_default='gn check && autoninja -C out/Default'
 
 alias all_b='build_default chrome browser_tests unit_tests'
 alias b_all='all_b'
