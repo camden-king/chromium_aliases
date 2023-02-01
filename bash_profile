@@ -13,7 +13,7 @@ function update_chromium_aliases() {
 }
 
 # Git commands 
-alias g_au='git cl format && git add . && git commit --amend && git cl upload'
+alias g_au='git add . && git commit --amend && git cl upload'
 alias g_cu='g_mu'
 function g_mu() {
     git cl format
