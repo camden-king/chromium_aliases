@@ -13,6 +13,7 @@ function update_chromium_aliases() {
 }
 
 # Git commands 
+# TODO: add a check here similar to https://github.com/camden-king/chromium_aliases/commit/c790ae14f4ff429e566cb032ecfc534168c87c34 which was reverted
 alias g_au='git add . && git commit --amend && git cl upload'
 alias g_cu='g_mu'
 function g_mu() {
