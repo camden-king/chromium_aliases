@@ -30,8 +30,11 @@ alias build_default='autoninja -C out/Default'
 alias all_b='build_default chrome browser_tests unit_tests'
 alias b_all='all_b'
 alias cr_b='build_default chrome'
+alias b_cr='cr_b'
 alias bt_b='build_default browser_tests'
+alias b_bt='bt_b'
 alias ut_b='build_default unit_tests'
+alias b_ut='ut_b'
 
 alias cr_r='./out/Default/chrome --enable-logging --user-data-dir=$HOME/Documents/test_data'
 
