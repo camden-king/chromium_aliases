@@ -3,7 +3,7 @@
 alias alias_version='echo "Now using chromium_aliases version 1.0"'
 
 # Start of day commands
-alias gm_mac='gcert && gm'
+alias gm_mac='gcert && export PATH="$PATH:/Users/camdenking/depot_tools" && gm'
 alias gm='update_chromium_aliases && goma_ctl ensure_start && gclient sync -D && (cd ~/chromium/src; all_b)'
 
 function update_chromium_aliases() {
