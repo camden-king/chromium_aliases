@@ -1,6 +1,6 @@
 # My Bash Aliases for deleveloping on Chromium 
 
-alias alias_version='echo "Now using chromium_aliases version 1.0"'
+alias alias_version='echo "Now using chromium_aliases version 1.1"'
 
 # Start of day commands
 alias gm_mac='gcert && export PATH="$PATH:/Users/camdenking/depot_tools" && gm'
