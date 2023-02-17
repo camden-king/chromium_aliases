@@ -55,7 +55,7 @@ function ut_b_r() {
 function run() {
  number=$1
  shift
- for i in seq $number; do
+ for i in `seq $number`; do
   $@
   echo "Running test : $i" 1>&2
  done
